@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIRTHDAY</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div>
+    <div id="boxL">
+        <video autoplay loop muted plays-inline class="background-clip-outer">
+            <source src="BLACK-outer.mp4">
+        </video>
+            <p id="demo"></p>
+            <h3>Ki Dekh6is!!</h3>
+            <div class="center">
+                <span id="box1"></span>
+                <span id="box2"></span>
+                <span id="box3"></span>
+                <span id="box4"></span>
+                <span id="box0"></span>
+            </div>
+    </div>
+    <div id="boxK" style="display: none;">
+        <header>
+            <a href="https://youtu.be/fB8TyLTD7EE?si=t1xEYM614qrSUPZJ" target="_main" style="text-decoration: none;"><h1>HAPPY BIRTHDAY</h1></a>
+        </header>
+<br>
+<h5><i>Hey... Everyone, Tell You Something....</i></h5>
+<div>
+    <video autoplay loop muted plays-inline class="background-clip">
+        <source src="BLACK.mp4">
+    </video>
+    <div class="aa">
+        <a href="https://youtube.com/shorts/noKgzHixoxk?feature=share" target="_main">
+            <img src="box1.jpg" alt="Sushila" width="155">
+        </a>
+    </div>
+
+    <div class="aa">
+        <a href="https://youtube.com/shorts/n5VXbrw_ft4?feature=share" target="_main">
+            <img src="box2.jpg" alt="S.Jana" width="155">
+        </a>
+    </div>
+
+    <div class="aa">
+        <a href="https://youtube.com/shorts/90gPSnISyPU?feature=share" target="_main">  
+            <img src="box3.jpg" alt="Taniya" width="155">
+        </a>
+    </div>
+
+    <div class="aa">
+        <a href="https://youtube.com/shorts/00kDmbfBXmc?feature=share" target="_main">  
+            <img src="box4.jpg" alt="S.Patra" width="155">
+        </a>
+    </div>
+
+    <div class="aa">
+        <a href="https://youtube.com/shorts/hJqVKnzazVk?feature=share" target="_main">
+            <img src="box5.jpg" alt="Joyeta" width="155">
+        </a>
+    </div>
+
+    <div class="aa">
+        <a href="" target="_main">
+            <img src="box6.jpg" alt="Matal" width="155">
+        </a>
+    </div>
+
+
+    <a href="www.google.com"></a>
+        <div class="rajib">
+        <details>
+            <summary><h4>Hello Bestu</h4></summary>
+            <i>Happy Birthday to my dearest friend! 🎉
+
+                Born on this day in 2002, you've become not just a year older, but a year wiser and more wonderful. It's been a joy to watch you grow and thrive. May this year bring you endless happiness, success, and memories that you'll cherish forever.
+                <br>
+
+                We have shared a lot of quality times together, as we celebrate your amazing personality.... Your pure heart and genuine kindness have always been a beacon of light in my life. Here's to the laughter that never ends, the dreams that soar, and the bond that deepens with each passing year.
+                <br>
+
+                May your 22nd year be as incredible as the journey we've embarked on together. Cheers to you, to us, and to all the adventures that await!
+                With all my love.</i>
+        </details>
+    </div>
+</div>
+
+<!-- Adding JavaScript code -->
+<script>
+    // Converting string to required date format 
+    let deadline = new Date("May 14, 2024 00:00:00")
+                    .getTime();
+
+    // To call defined fuction every second
+    let x = setInterval(function () {
+        
+        // Getting current time in required format
+        let now = new Date().getTime();
+
+        // Calculating the difference
+        let t = deadline - now;
+
+        // Getting value of days, hours, minutes, seconds
+        let days = Math.floor(t / (1000 * 60 * 60 * 24));
+        let hours = Math.floor(
+            (t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        let minutes = Math.floor(
+            (t % (1000 * 60 * 60)) / (1000 * 60));
+        let seconds = Math.floor(
+            (t % (1000 * 60)) / 1000);
+
+        // Output the remaining time
+        document.getElementById("demo").innerHTML =
+            days + "d " + hours + "h " + 
+            minutes + "m " + seconds + "s ";
+
+        // Output for over time
+        if (t <= 1) {
+            clearInterval(x);
+            // document.getElementById("demo")
+            // 		.innerHTML = "EXPIRED";
+            var x = document.getElementById ("boxL");
+            var y = document.getElementById ("boxK");
+            x.style.display = "none";
+            y.style.display = "block";
+        }
+    }, 1000);
+</script>
+
+</body>
+</html>
